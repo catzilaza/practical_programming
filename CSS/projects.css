@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  background-color: bisque;
+  text-align: center;
+}
+
+.table-menu {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+h4 {
+  font-family: "Architects Daughter", cursive;
+  font-weight: normal;
+}
+
+h4 i {
+  color: red;
+}

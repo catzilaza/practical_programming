@@ -1,0 +1,88 @@
+body {
+  width: 100%;
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+  font-family: cursive;
+}
+
+h2 {
+  text-align: center;
+  font-family: cursive;
+  font-weight: normal;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Ephesis", cursive;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(127, 233, 196);
+}
+
+th {
+  width: 33.33%;
+  vertical-align: top;
+}
+
+table tr th:nth-child(1) p:nth-child(2) {
+  font-weight: normal;
+  text-align: justify;
+  
+}
+
+table tr th:nth-child(1) .col-aboutme-website, .col-aboutme-email, .col-aboutme-facebook {
+    text-align: left;
+}
+
+table tr th:nth-child(1) .col-aboutme-facebook a {
+    font-size:20px;
+    color:rgb(99, 132, 241)
+
+}
+
+table tr th:nth-child(2) p:nth-child(2) img {
+    width: auto;
+}
+
+table tr th:nth-child(3) {
+    text-align: left;
+}
+
+table tr th:nth-child(3) p:nth-child(2) {
+    font-weight: normal;
+}
+
+table tr th:nth-child(3) p:nth-child(3) a {
+    font-size: 20px;
+     color: rgb(245, 80, 80)
+}
+
+table tr th:nth-child(3) p:nth-child(4) a {
+    font-size: 20px;
+    color: rgb(245, 80, 80)
+}
+
+table tr th:nth-child(3) p:nth-child(5) i {
+    font-size: 48px;
+    color: rgb(55, 142, 241)
+}
+
+table tr th:nth-child(3) p:nth-child(5) i:nth-child(2) {
+    font-size: 48px;
+    color: rgb(240, 87, 232)
+}
+
+.copyright {
+    text-align: center
+}
+
+.copyright i {
+    font-size: 20px;
+    color: rgb(12, 20, 3)
+}

@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+  background-color: bisque;
+}
+
+.table-menu {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: cursive;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  font-weight: normal;
+}
+
+h4 i {
+    color: red;
+}
+
+.table-experiences {
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;  
+   
+}
+
+.table-experiences tbody tr td h2 {
+  text-align: center;
+}
+
+.table-experiences tbody tr td ul,ol {
+  text-align: left;
+}
