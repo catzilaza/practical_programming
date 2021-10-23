@@ -3,6 +3,10 @@ body {
   background-color: bisque;
 }
 
+.top-container {
+  background-color: rgb(127, 233, 196);
+}
+
 h1 {
   text-align: center;
   font-family: cursive;
@@ -14,15 +18,27 @@ h2 {
   font-weight: normal;
 }
 
+h2 span[class="body-h2-nth1-name"] {
+  text-decoration: underline;
+  color: rgb(240, 139, 81);
+}
+
 h4 {
   text-align: center;
   font-family: "Ephesis", cursive;
 }
 
+.table-menu {
+  background-color: rgb(127, 233, 196);
+}
+
+.table-menu td:hover {
+  background-color: rgb(10, 158, 106);
+}
+
 table {
   width: 100%;
   text-align: center;
-  background-color: rgb(127, 233, 196);
 }
 
 th {
@@ -30,59 +46,66 @@ th {
   vertical-align: top;
 }
 
+.table-body {
+  background-color: rgb(127, 233, 196);
+}
+
 table tr th:nth-child(1) p:nth-child(2) {
   font-weight: normal;
   text-align: justify;
-  
 }
 
-table tr th:nth-child(1) .col-aboutme-website, .col-aboutme-email, .col-aboutme-facebook {
-    text-align: left;
+table tr th:nth-child(1) .col-aboutme-website,
+.col-aboutme-email,
+.col-aboutme-facebook {
+  text-align: left;
 }
 
 table tr th:nth-child(1) .col-aboutme-facebook a {
-    font-size:20px;
-    color:rgb(99, 132, 241)
-
+  font-size: 20px;
+  color: rgb(99, 132, 241);
 }
 
 table tr th:nth-child(2) p:nth-child(2) img {
-    width: auto;
+  width: auto;
 }
 
 table tr th:nth-child(3) {
-    text-align: left;
+  text-align: left;
 }
 
 table tr th:nth-child(3) p:nth-child(2) {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 table tr th:nth-child(3) p:nth-child(3) a {
-    font-size: 20px;
-     color: rgb(245, 80, 80)
+  font-size: 20px;
+  color: rgb(245, 80, 80);
 }
 
 table tr th:nth-child(3) p:nth-child(4) a {
-    font-size: 20px;
-    color: rgb(245, 80, 80)
+  font-size: 20px;
+  color: rgb(245, 80, 80);
 }
 
 table tr th:nth-child(3) p:nth-child(5) i {
-    font-size: 48px;
-    color: rgb(55, 142, 241)
+  font-size: 48px;
+  color: rgb(55, 142, 241);
 }
 
 table tr th:nth-child(3) p:nth-child(5) i:nth-child(2) {
-    font-size: 48px;
-    color: rgb(240, 87, 232)
+  font-size: 48px;
+  color: rgb(240, 87, 232);
 }
 
+.footer {
+  background-color: aquamarine;
+}
 .copyright {
-    text-align: center
+  text-align: center;
 }
 
 .copyright i {
-    font-size: 20px;
-    color: rgb(12, 20, 3)
+  font-size: 20px;
+  color: rgb(12, 20, 3);
 }

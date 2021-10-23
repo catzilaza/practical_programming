@@ -5,6 +5,14 @@ body {
 }
 
 .table-menu {
+  background-color: rgb(127, 233, 196);
+}
+
+.table-menu td:hover {
+  background-color: rgb(10, 158, 106);
+}
+
+.table-menu table {
   width: 100%;
   text-align: center;
 }

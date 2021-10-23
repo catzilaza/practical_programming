@@ -5,7 +5,16 @@ body {
 }
 
 .table-menu {
+  background-color: rgb(127, 233, 196);
+}
+
+.table-menu td:hover {
+  background-color: rgb(10, 158, 106);
+}
+
+.table-menu table {
   width: 100%;
+  text-align: center;
 }
 
 h1 {
@@ -21,7 +30,7 @@ h4 i {
   color: red;
 }
 
-.table-abilities {
+.table-body table {
     margin-left: auto;
     margin-right: auto;           
 }

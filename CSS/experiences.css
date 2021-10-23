@@ -4,17 +4,27 @@ body {
 }
 
 .table-menu {
+  background-color: rgb(127, 233, 196);
+}
+
+.table-menu td:hover {
+  background-color: rgb(10, 158, 106);
+}
+
+.table-menu table {
   width: 100%;
   text-align: center;
 }
 
-h1 {
+.table-body {
   text-align: center;
+}
+
+h1 { 
   font-family: cursive;
 }
 
-h4 {
-  text-align: center;
+h4 {  
   font-family: "Architects Daughter", cursive;
   font-weight: normal;
 }
@@ -23,17 +33,12 @@ h4 i {
     color: red;
 }
 
-.table-experiences {
+.table-body table {
     margin-left: auto;
-    margin-right: auto; 
-    text-align: center;  
+    margin-right: auto;      
    
 }
 
-.table-experiences tbody tr td h2 {
-  text-align: center;
-}
-
-.table-experiences tbody tr td ul,ol {
+.table-body ul,ol {
   text-align: left;
-}
+} 
