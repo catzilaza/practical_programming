@@ -17,6 +17,10 @@ body {
   text-align: center;
 }
 
+.table-body {
+  background-color: rgb(127, 233, 196);
+}
+
 h1 {
   font-family: cursive;
 }
