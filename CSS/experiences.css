@@ -1,45 +1,33 @@
-body {
+ 
+ body {
   width: 100%;
-  background-color: bisque;
+  background-color: bisque;   
 }
 
 .table-menu {
+  text-align: center; 
   background-color: rgb(127, 233, 196);
 }
 
-.table-menu td:hover {
+.table-menu div[class=col]:hover {
   background-color: rgb(10, 158, 106);
-}
-
-.table-menu table {
-  width: 100%;
-  text-align: center;
 }
 
 .table-body {
   text-align: center;
   background-color: rgb(127, 233, 196);
+  
 }
 
-h1 { 
+h1 {
   font-family: cursive;
 }
 
-h4 {  
+h4 {
   font-family: "Architects Daughter", cursive;
   font-weight: normal;
 }
 
 h4 i {
-    color: red;
+  color: red;
 }
-
-.table-body table {
-    margin-left: auto;
-    margin-right: auto;      
-   
-}
-
-.table-body ul,ol {
-  text-align: left;
-} 

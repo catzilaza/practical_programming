@@ -5,16 +5,12 @@ body {
 }
 
 .table-menu {
+  text-align: center;
   background-color: rgb(127, 233, 196);
 }
 
-.table-menu td:hover {
+.table-menu div[class=col]:hover {
   background-color: rgb(10, 158, 106);
-}
-
-.table-menu table {
-  width: 100%;
-  text-align: center;
 }
 
 .table-body {
