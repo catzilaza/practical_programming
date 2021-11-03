@@ -1,0 +1,6 @@
+body {
+    color: rgb(238, 145, 238);
+    background-color: aquamarine;
+    background-image: url(../images/PICT01.jpg);
+    background-size: cover;
+}
