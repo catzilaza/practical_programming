@@ -140,3 +140,27 @@ function testNestedLoops() {
     }
     document.getElementById("ex14-7").innerHTML = text;
 }
+
+//EX 14.8 : Break Statement
+function testBreak() {
+    let n = document.getElementById("inputBreakNumber").value;
+    for ( let i = 0; i < 10; i++) {
+        if ( i == n) {
+            break;
+        }
+        document.getElementById("ex14-8").innerHTML += "The for number is "+ i + "<br>";
+
+    }
+}
+
+//EX 14.9 : Continue Statement
+function testContinue() {
+    let n = document.getElementById("inputContinueNumber").value;
+    for ( let i = 0; i < 10; i++) {
+        if ( i == n) {
+            continue;
+        }
+        document.getElementById("ex14-9").innerHTML += "The for number is "+ i + "<br>";
+
+    }
+}
