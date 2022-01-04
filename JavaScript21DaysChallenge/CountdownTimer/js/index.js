@@ -12,7 +12,7 @@
 
     function countDown() {
         const now = new Date().getTime();
-        const newYear = new Date('December 31, 2021 23:59:59').getTime();
+        const newYear = new Date('December 31, 2022 23:59:59').getTime();
         const unixTimeLeft = newYear - now;
 
         setElementInnerText('days', Math.floor(unixTimeLeft/DAY));

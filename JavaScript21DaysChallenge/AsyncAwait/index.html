@@ -9,6 +9,78 @@
 </head>
 <body>
     <h1>Ep 03: Async Await</h1>
+    <h3>
+        <h3>//1.How Asynchronous code works in JavaScript</h3>
+        <h3>console.log('กรณี 1.How Asynchronous code works in JavaScript');</h3>
+        <h3>function simulateAsyncAPIwork(text, timeout){</h3>
+        <h3>setTimeout(()=> console.log(text), timeout);</h3>
+        <h3>}</h3>
+        <h3> simulateAsyncAPIwork('กรณี 1: Start->Ariya', 10000);</h3>
+        <h3>simulateAsyncAPIwork('กรณี 1: Duan', 5000);</h3>
+        <h3>simulateAsyncAPIwork('กรณี 1: SomO ->End', 1000);</h3>
+        <h3>console.log('กรณี 2.Callback and case of the CALLBACK HELL');</h3>
+        <h3>//2. Callback</h3>
+        <h3>function simulateAsyncAPIcallback(text, timeout, callback) {</h3>
+        <h3>setTimeout(() => {</h3>
+        <h3>console.log(text);</h3>
+        <h3>if(callback) {</h3>
+        <h3>callback();</h3>
+        <h3> }</h3>
+        <h3>}, timeout);</h3>
+        <h3>}</h3>
+        <h3>//This is the CALLBACK HELL</h3>
+        <h3>simulateAsyncAPIcallback('กรณี 2: Ariya', 10000, () => {</h3>
+        <h3>simulateAsyncAPIcallback('กรณี 2: Duan', 5000, () => {</h3>
+        <h3>simulateAsyncAPIcallback('กรณี 2: SomO', 1000, ()=> {</h3>
+        <h3>// 1 สังเกตว่า ในฟังกชั่นในสุดนี้ callback เป็นฟังก์ชันเปล่า ในกรณีนี้ สามารถละได้ ไม่ต้องใส่ก็ได้ ก็จะได้เป็น simulateAsyncAPI('SomO', 100) แต่มีเงื่อนไขว่า จะต้องไปสร้าง if(callback) { callback();} ในตอนเริ่มต้นที่เรียกใช้ฟังก์ชัน callback ไม่งั้นจะเกิด ERROR ขึ้น</h3>
+        <h3> // 2 สังเกตจะเห็นว่าตอนเรียกใช้ฟังก์ชัน simulateAsyncAPI จะเกิดการซ้อนกัน เรียกว่า  CALLBACK HELL</h3>
+        <h3> })</h3>
+        <h3>});</h3>
+        <h3>});</h3>
+        <h3>console.log('กรณี 3 Promise');</h3>
+        <h3>//3. Promise</h3>
+        <h3>function simulateAsyncAPIpromise(text, timeout) {</h3>
+        <h3> return new Promise((resolve, reject) => {</h3>
+        <h3>setTimeout(() => {</h3>
+        <h3>if(text === 'D') return reject('Duan got Rejected');</h3>
+        <h3>console.log(text);</h3>
+        <h3>resolve();</h3>
+        <h3>})</h3>
+        <h3>}, timeout);</h3>
+        <h3>}</h3>
+        <h3> simulateAsyncAPIpromise('กรณี 3: resolve: Ariya', 5000)</h3>
+        <h3>.then(() => {</h3>
+        <h3>return simulateAsyncAPIpromise('กรณี 3: .then: Duan', 5000);</h3>
+        <h3>})</h3> 
+        <h3>.then(() => {</h3>
+        <h3>return simulateAsyncAPIpromise('กรณี 3: .then: SomO', 5000); </h3>
+        <h3>})</h3>
+        <h3>.catch((error) => {</h3>
+        <h3>console.error(error);</h3>
+        <h3>});</h3>
+        <h3>//4. Async Await</h3>
+        <h3>console.log("กรณี 4 Async Await");</h3>
+        <h3>function simulateAsyncAPIasyncawit(text, timeout) {</h3>
+        <h3>return new Promise((resolve, reject)=> {</h3>
+        <h3>setTimeout(()=> {</h3>
+        <h3>if(text === 'D') return reject('Duan got rejected');</h3>
+        <h3>console.log(text);</h3>
+        <h3>resolve();</h3>
+        <h3>}, timeout);</h3>
+        <h3>});</h3>
+        <h3>}</h3>
+        <h3>async function run() {</h3>
+        <h3>try {</h3>
+        <h3>await simulateAsyncAPIasyncawit('กรณี 4: Ariya', 1000);</h3>
+        <h3>await simulateAsyncAPIasyncawit('D', 1000);</h3>
+        <h3>await simulateAsyncAPIasyncawit('กรณี 4: SomO', 1000);</h3>
+        <h3>} catch (error) {</h3>
+        <h3>console.error(error);</h3>
+        <h3> }</h3>
+        <h3> }</h3>
+        <h3>run();
+        </h3>        
+    </h3>
     <script src="js/index.js"></script>
 </body>
 </html>
