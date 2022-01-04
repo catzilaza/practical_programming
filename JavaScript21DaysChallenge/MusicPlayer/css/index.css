@@ -1,0 +1,55 @@
+body {
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: #515154;
+
+    background: #a64e6d;
+    box-shadow: -100vw 0 0 100vw #a64e6d;
+}
+
+.container {
+    width: 500px;
+    box-shadow: 0 10px 10px 0 #515154;
+    background: #ffffff;
+    
+}
+
+.cover {
+    background: #f6f7be;
+}
+
+.music {
+    background: #cdf7c5;
+}
+
+.control {
+    background: #a1bef5;
+}
+
+.play,
+.pause {
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    width: 20px;
+    height: 20px;
+    margin-top: 10%;
+}
+
+.pause {
+    background: url(../pics/x.png) 0 0 / contain no-repeat;
+}
+
+.play {
+    background: url(../pics/play.png) 0 0 / contain no-repeat;
+}
